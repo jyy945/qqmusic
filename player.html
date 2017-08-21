@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>正在播放 御龙吟-姚贝娜…</title>
+	<link rel="shortcut icon"type="image/x-icon" href="logo.jpg"media="screen" />
+	<link rel="stylesheet" href="css/player.css">
+	<script>
+		var formatObj = {};
+    	var singDetail = {};
+	</script>
+	<script src = 'js/jquery.js'></script>
+	<script src = 'js/lrc.js'></script>
+	<script src = 'js/player.js'></script>
+</head>
+<body  onselectstart="return false;">
+	<div class="player-mask"></div>
+	<div class="player-mask1"></div>
+	<div class="player-content">
+		<h1 class = 'player-logo'>
+			<a href=""><img src="https://y.gtimg.cn/mediastyle/yqq/img/player_logo@2x.png" alt=""></a>
+		</h1>
+		<p class = 'player-login'>
+			<a href="">登录</a>
+			<a href="">设置</a>
+		</p>
+		<div class="player-list">
+			<div class="player-list-content">
+				<div class="player-list-operate">
+					<a href="">
+						<i></i>
+						<span>收藏</span>
+					</a>
+					<a href="">
+						<i></i>
+						<span>添加到</span>
+					</a>
+					<a href="">
+						<i></i>
+						<span>下载</span>
+					</a>
+					<a href="">
+						<i></i>
+						<span>删除</span>
+					</a>
+					<a href="">
+						<i></i>
+						<span>清空列表</span>
+					</a>
+				</div>
+				<div class="player-list-display">
+					<ul>
+						<li>
+							<div>
+								<span class = 'choose'><input type="checkbox"></span>
+							</div>
+							<div>
+								歌曲
+							</div>
+							<div>
+								歌手
+							</div>
+							<div>时长</div>
+						</li>
+						<li>
+							<div>
+								<span class = 'choose'><input type="checkbox"></span>
+							</div>
+							<div>
+								<span class = 'icon-playing'>1</span> 御龙吟
+								<p><span></span><span></span><span></span><span></span></p>
+							</div>
+							<div>
+								姚贝娜
+							</div>
+							<div><span>05:11</span><span></span></div>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="player-list-words">
+				<div class="player-words-pic">
+					<img src="https://y.gtimg.cn/music/photo_new/T002R300x300M000000bFkCl0aG5cM.jpg?max_age=2592000" class = 'cc' alt="">
+				</div>
+				<div class="player-words-scroll">
+					<p>歌曲名：<span class = 'music-sing-name'></span></p>
+					<p>歌手名：<span class="music-singer-name"></span></p>
+					<p>专辑名：<span class = 'music-sing-album'></span></p>
+					<div class="music-lrc-scroll">
+						<div class="music-lrc-move"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="player-big-lrc">
+			<div class="big-lrc-container">
+				<div class="big-lrc-move">
+
+				</div>
+			</div>
+		</div>
+		<div class="player-footer">
+			<div class="player-operate">
+				<span class = 'player-prev'></span>
+				<span class = 'player-play'></span>
+				<span class = 'player-next'></span>
+				<div class = 'player-bar'>
+					<p class= 'music-desc'><span class = 'music-singer'>御龙吟 - 姚贝娜</span><span class="music-duration">&nbsp;/&nbsp;00:00</span><span class = 'music-cur'>00:00</span></p>
+					<p class = 'music-bar'>
+						<span class="music-move-bar"></span>
+						<span class = 'music-move'></span>
+						<span class = 'music-progress'></span>
+					</p>
+				</div>
+				<span class="player-mode"></span>
+				<span class="player-like"></span>
+				<span class="player-download"></span>
+				<span class="player-change-lrc"></span>
+			</div>
+		</div>
+	</div>
+	<audio src="yly.mp3" id = 'music' loop ></audio>
+	<div id = 'lrc'>
+		
+	</div>
+	<div id="formatLrc">
+		
+	</div>
+</body>
+</html>
